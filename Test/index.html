@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;700&family=Spline+Sans+Mono:wght@300&display=swap" rel="stylesheet">    <title>ChatBox</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="chat-wrapper">
+       <div class="user-tabs">
+  <ul>
+    <li class="active" onclick="switchUser('Tous')" data-user="Tous"><img src="Image/groupe.png">Tous</li>
+    <li onclick="switchUser('Damien')" data-user="Damien">
+      <img src="Image/user1.png" alt="Utilisateur 1">
+      <span>Damien</span>
+    </li>
+    <li onclick="switchUser('Julien')" data-user="Julien">
+      <img src="Image/user2.png" alt="Utilisateur 2">
+      <span>Julien</span>
+    </li>
+    <li onclick="switchUser('Marion')" data-user="Marion">
+      <img src="Image/user3.png" alt="Utilisateur 3">
+      <span>Marion</span>
+      
+    </li>
+  </ul>
+</div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Tchat</h2>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Tapez votre message...">
+                <button onclick="sendMessage()">Envoyer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
